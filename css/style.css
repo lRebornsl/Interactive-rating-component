@@ -69,16 +69,27 @@ body {
 
 .numbers {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     background-color: #262f38;
-    text-align: center;
     width: 1.7rem;
     height: 1.7rem;
     padding: 1.2rem;
     border-radius: 2rem;
     color: var(--light-gray);
     font-size: 1.2rem;
-    align-items: center;
-    justify-content: center;
+    margin: 0 .2rem;
+}
+
+.numbers:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.no-hover:hover {
+    background-color: var(--light-gray);
 }
 
 button {
@@ -89,4 +100,16 @@ button {
     background-color: #fb7413;
     border-radius: 2rem;
     letter-spacing: .1rem;
+    transition: .25s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.selected {
+    background-color: var(--light-gray);
+    color: var(--white);
 }
