@@ -31,27 +31,31 @@ body {
 }
 
 .main-container {
-    background-color: var(--dark-blue);
     grid-area: 2 / 2 / 3 / 3;
-    background-image: linear-gradient(to top, var(--very-dark-blue) 0%, var(--dark-blue) 100%);
+    background-image: linear-gradient(to top, #171e28, #1e252f);
     border-radius: 2.3rem;
     padding: 3rem;
+    max-width: 26rem;
+    margin: auto;
 }
 
 .star-icon {
-    background-color: var(--light-gray);
+    background-color: #26303b;
 }
 
 .main-container h1 {
     color: var(--white);
+    font-size: 2.1rem;
 }
 
 .main-container p {
     color: var(--light-gray);
+    font-size: 1.1rem;
+    line-height: 1.8rem;
 }
 
 .star-icon {
-    padding: 1.2rem;
+    padding: 1.25rem;
     border-radius: 2rem;
     background-color: var(--dark-blue);
 }
@@ -64,14 +68,25 @@ body {
 }
 
 .numbers {
-    background-color: var(--dark-blue);
+    display: flex;
+    background-color: #262f38;
     text-align: center;
     width: 1.7rem;
     height: 1.7rem;
     padding: 1.2rem;
     border-radius: 2rem;
+    color: var(--light-gray);
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
     width: 100%;
+    font-size: 1.1rem;
+    padding: 1.1rem;
+    color: var(--white);
+    background-color: #fb7413;
+    border-radius: 2rem;
+    letter-spacing: .1rem;
 }
