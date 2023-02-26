@@ -4,7 +4,7 @@
     --white: #ffffff;
     --light-gray: #959eac;
     --medium-gray: #7c8798;
-    --dark-blue: #252d37;
+    --dark-blue: rgb(37, 45, 55);
     --very-dark-blue: #121417;
 
     /*Typography*/
@@ -32,7 +32,7 @@ body {
 
 .main-container {
     grid-area: 2 / 2 / 3 / 3;
-    background-image: linear-gradient(to top, #171e28, #1e252f);
+    background: linear-gradient(to top, #171e28, #1e252f);
     border-radius: 2.3rem;
     padding: 3rem;
     max-width: 26rem;
@@ -95,10 +95,12 @@ body {
 button {
     width: 100%;
     font-size: 1.1rem;
+    font-weight: bold;
     padding: 1.1rem;
     color: var(--white);
     background-color: #fb7413;
     border-radius: 2rem;
+    border-style: none;
     letter-spacing: .1rem;
     transition: .25s;
     cursor: pointer;
@@ -112,4 +114,10 @@ button:hover {
 .selected {
     background-color: var(--light-gray);
     color: var(--white);
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 1px 4px 0.2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 4px 0.2px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 4px 0.2px rgba(0,0,0,0.75);
 }
