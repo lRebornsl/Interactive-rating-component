@@ -1,0 +1,16 @@
+:root{
+    /*Colors*/
+    --orange: #fb7413;
+    --white: #ffffff;
+    --light-gray: #959eac;
+    --medium-gray: #7c8798;
+    --dark-blue: #252d37;
+    --very-dark-blue: #121417;
+
+    /*Typography*/
+    --overpass: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+}
