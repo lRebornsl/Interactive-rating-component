@@ -1,4 +1,4 @@
-:root{
+:root {
     /*Colors*/
     --orange: #fb7413;
     --white: #ffffff;
@@ -11,7 +11,7 @@
     --overpass: 'Overpass', sans-serif;
 }
 
-html{    
+html {
     font-size: 62.5%;
 }
 
@@ -19,4 +19,24 @@ body {
     font-size: 16px;
     background-color: var(--very-dark-blue);
     font-family: var(--overpass);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.main-container {
+    background-color: var(--dark-blue);
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.star-icon {
+    background-color: var(--light-gray);
+}
+
+.main-container h1 {
+    color: var(--white);
+}
+
+.main-container p {
+    color: var(--light-gray);
 }
