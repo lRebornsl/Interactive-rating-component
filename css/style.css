@@ -11,6 +11,11 @@
     --overpass: 'Overpass', sans-serif;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -19,14 +24,18 @@ body {
     font-size: 16px;
     background-color: var(--very-dark-blue);
     font-family: var(--overpass);
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1.5fr 2fr 1.5fr;
 }
 
 .main-container {
     background-color: var(--dark-blue);
     grid-area: 2 / 2 / 3 / 3;
+    background-image: linear-gradient(to top, var(--very-dark-blue) 0%, var(--dark-blue) 100%);
+    border-radius: 2.3rem;
+    padding: 3rem;
 }
 
 .star-icon {
@@ -39,4 +48,30 @@ body {
 
 .main-container p {
     color: var(--light-gray);
+}
+
+.star-icon {
+    padding: 1.2rem;
+    border-radius: 2rem;
+    background-color: var(--dark-blue);
+}
+
+.rating ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 2rem 0;
+}
+
+.numbers {
+    background-color: var(--dark-blue);
+    text-align: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 1.2rem;
+    border-radius: 2rem;
+}
+
+button {
+    width: 100%;
 }
