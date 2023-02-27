@@ -99,7 +99,7 @@ body {
 
 .button {
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 1.1rem;
     color: var(--white);
@@ -139,7 +139,7 @@ body {
 #msg {
     border-radius: 2rem;
     padding: .6rem;
-    background: rgb(124, 135, 152, 20%);
+    background: rgb(124, 135, 152, 10%);
     color: var(--orange);
     font-size: 1.5rem;
 }

@@ -1,18 +1,25 @@
 const items = Array.from(document.querySelectorAll('.rating li'));
 const btnSubmit = document.querySelector('.button');
 const divMain = document.querySelector('.main-container');
+let ratingValue = 0;
 
 items.forEach(item => {
   item.addEventListener('click', () => {
 
     if (item.classList.contains('selected')) {
       item.classList.remove('selected', 'no-hover')
+      ratingValue = 0;
     } else {
       items.forEach(otherItem => {
         otherItem.classList.remove('selected', 'no-hover');
       });
 
       item.classList.add('selected', 'no-hover');
+      const getValue = () => {
+        let value = document.querySelector('.selected').value;
+        return value;
+      };
+      ratingValue = getValue();
     }
   });
 });
@@ -22,8 +29,6 @@ btnSubmit.addEventListener('click', () => {
   newMain();
 });
 
-
-
 function newMain(){
   divMain.innerHTML = `
   <div class="text-center">
@@ -32,7 +37,7 @@ function newMain(){
   <div class="text-center">
     <div class="msg-container">
       <p id="msg">
-        You selected 4 out of 5
+        You selected ${ratingValue} out of 5
       </p>
     </div>
     <h1>Thank you!</h1>
