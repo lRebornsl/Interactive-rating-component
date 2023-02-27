@@ -1,5 +1,5 @@
 const items = Array.from(document.querySelectorAll('.rating li'));
-const btnSubmit = document.querySelector('.sombra');
+const btnSubmit = document.querySelector('.button');
 const divMain = document.querySelector('.main-container');
 
 items.forEach(item => {
@@ -19,21 +19,25 @@ items.forEach(item => {
 
 btnSubmit.addEventListener('click', () => {
   divMain.innerHTML = "";
-  newMain()
+  newMain();
 });
 
 
 
 function newMain(){
   divMain.innerHTML = `
-  <img src="./images/illustration-thank-you.svg" alt="" class="thank-you">
-  <div class="text">
-            <p>
-                You selected 4 of 5
-            </p>
-            <h1>Thank you!</h1>
-            <p>
-              We appreciate you taking the time to give a rating. If you ever need more support, don't hestitate to get in touch!
-            </p>
+  <div class="text-center">
+    <img src="./images/illustration-thank-you.svg" alt="" class="thank-you">
+  </div>
+  <div class="text-center">
+    <div class="msg-container">
+      <p id="msg">
+        You selected 4 out of 5
+      </p>
+    </div>
+    <h1>Thank you!</h1>
+    <p>
+      We appreciate you taking the time to give a rating. If you ever need more support, don't hestitate to get in touch!
+    </p>
   </div>`;
 }
